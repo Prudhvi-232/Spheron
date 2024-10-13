@@ -1,6 +1,4 @@
-const aptosClient = new aptos.AptosClient(
-	"https://fullnode.testnet.aptoslabs.com/v1"
-);
+const aptosClient = new aptos.AptosClient("https://fullnode.testnet.aptoslabs.com/v1");
 
 const createEventBtn = document.getElementById("createEventBtn");
 const buyTicketBtn = document.getElementById("buyTicketBtn");
@@ -12,9 +10,7 @@ async function getAccountAddress() {
 	return account.address;
 }
 
-// Replace this with your actual contract address
-const contractAddress =
-	"0x3ace14ac2d2ce9e9ce18d6f4bce4934157614625eb1a3ed873642c9f0cc738e6";
+const contractAddress = "0x3ace14ac2d2ce9e9ce18d6f4bce4934157614625eb1a3ed873642c9f0cc738e6";
 
 createEventBtn.addEventListener("click", async () => {
 	const eventName = document.getElementById("eventName").value;
@@ -32,8 +28,7 @@ createEventBtn.addEventListener("click", async () => {
 
 	try {
 		const response = await window.aptos.signAndSubmitTransaction(payload);
-		createEventMsg.textContent =
-			"Event created successfully: " + JSON.stringify(response);
+		createEventMsg.textContent = "Event created successfully: " + JSON.stringify(response);
 		createEventMsg.style.color = "green";
 	} catch (error) {
 		console.error("Error creating event:", error);
@@ -55,8 +50,7 @@ buyTicketBtn.addEventListener("click", async () => {
 
 	try {
 		const response = await window.aptos.signAndSubmitTransaction(payload);
-		buyTicketMsg.textContent =
-			"Ticket bought successfully: " + JSON.stringify(response);
+		buyTicketMsg.textContent = "Ticket bought successfully: " + JSON.stringify(response);
 		buyTicketMsg.style.color = "green";
 	} catch (error) {
 		console.error("Error buying ticket:", error);
