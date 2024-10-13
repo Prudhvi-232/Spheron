@@ -1,15 +1,12 @@
 [package]
-name = "send_message"
+name = "EventTicketing"
 version = "1.0.0"
 authors = []
 
 [addresses]
-MyModule = '0x649d303ed0036acaf908a398fc3b76f0f7db5ac5dce0d38ed802d86b46e2d336'
-[dev-addresses]
+MyModule = "0x649d303ed0036acaf908a398fc3b76f0f7db5ac5dce0d38ed802d86b46e2d336"
 
 [dependencies.AptosFramework]
 git = "https://github.com/aptos-labs/aptos-core.git"
 rev = "testnet"
 subdir = "aptos-move/framework/aptos-framework"
-
-[dev-dependencies]
