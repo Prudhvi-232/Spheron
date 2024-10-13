@@ -1,5 +1,7 @@
 module 0x3ace14ac2d2ce9e9ce18d6f4bce4934157614625eb1a3ed873642c9f0cc738e6::EventTicketing {
     use aptos_framework::signer;
+    use std::vector;
+    use std::option;
 
     struct Ticket has store, key, copy {
         event_id: u64,
@@ -49,6 +51,7 @@ module 0x3ace14ac2d2ce9e9ce18d6f4bce4934157614625eb1a3ed873642c9f0cc738e6::Event
         let ticket = borrow_global_mut<Ticket>(signer::address_of(from));
         assert!(ticket.event_id == event_id, 2); 
         ticket.owner = to; 
+        ticket.is_available = false; // Assuming the ticket is sold/transferred
     }
 
     public fun get_event(owner: address): Event acquires Event {

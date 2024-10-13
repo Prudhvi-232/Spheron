@@ -1,10 +1,9 @@
-/* Ensure consistent box-sizing for all elements */
 * {
 	box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	background: linear-gradient(to right, #6a11cb, #2575fc);
 	color: #fff;
 	margin: 0;
@@ -44,7 +43,7 @@ h2 {
 input {
 	margin: 10px 0;
 	padding: 15px;
-	width: 100%; /* Ensures inputs take up full width */
+	width: 100%;
 	border-radius: 8px;
 	border: 1px solid #ccc;
 	font-size: 1rem;
@@ -52,10 +51,9 @@ input {
 	color: #333;
 }
 
-/* Ensuring uniform height and spacing of buttons */
 button {
 	padding: 12px 20px;
-	width: 100%; /* Ensures button is full width */
+	width: 100%;
 	border-radius: 8px;
 	border: none;
 	background-color: #ff7e5f;
@@ -75,6 +73,18 @@ button:hover {
 	color: #ffdfba;
 }
 
+.links {
+	margin-top: 30px;
+}
+
+.links h3 {
+	color: #f0f0f0;
+}
+
+.links p {
+	color: #ccc;
+}
+
 footer {
 	text-align: center;
 	margin-top: 50px;
@@ -87,7 +97,6 @@ input::placeholder {
 	opacity: 0.8;
 }
 
-/* Add media queries for responsiveness on smaller screens */
 @media (max-width: 600px) {
 	input,
 	button {
