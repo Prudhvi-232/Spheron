@@ -1,0 +1,10 @@
+{
+    "name": "EventX",
+    "version": "0.1.0",
+    "scripts": {
+      "test": "aptos test"
+    },
+    "dependencies": {
+      "aptos-std": "^0.1.0"
+    }
+  }

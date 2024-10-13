@@ -1,0 +1,6 @@
+[package]
+name = "EventX"
+version = "0.1.0"
+
+[dependencies]
+aptos-std = "0.1.0"
