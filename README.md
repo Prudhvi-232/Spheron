@@ -1,7 +1,7 @@
 # 🎟️ **Spheron: Decentralized Event Ticketing System** 🚀
 
 [![Spheron](https://img.shields.io/badge/Spheron-Hackathon_Project-blue.svg)](https://github.com/Prudhvi-232/Spheron)
-[![Blockchain](https://img.shields.io/badge/Blockchain-Ethereum%20%26%20Aptos-9cf.svg)](#tech-stack)
+[![Blockchain](https://img.shields.io/badge/Blockchain-Ethereum%20%26%20Aptos-9cf.svg)](#-tech-stack)
 
 ## Overview
 
@@ -15,15 +15,14 @@ This project is ideal for event organizers looking to bypass traditional central
 
 The project employs the following technologies:
 
-| Technology        | Description                        |
-| ----------------- | ---------------------------------- |
-| **HTML5**         | Provides the structure of the web pages |
-| **CSS3**          | Styles the application for a clean and responsive design |
-| **JavaScript**    | Frontend scripting for interactivity and blockchain transactions |
-| **Web3.js**       | JavaScript library to interact with Ethereum nodes |
-| **Aptos SDK**     | JavaScript library to connect to the Aptos blockchain |
-| **MetaMask**      | Browser extension for Ethereum wallet transactions |
-| **Aptos Wallet**  | Wallet to handle Aptos transactions |
+| Technology        | Description                                                   |
+| ----------------- | ------------------------------------------------------------- |
+| **HTML5**         | Provides the structure of the web pages                       |
+| **CSS3**          | Styles the application for a clean and responsive design      |
+| **JavaScript**    | Frontend scripting for interactivity and blockchain transactions|
+| **Web3.js**       | JavaScript library to interact with Ethereum nodes            |
+| **Aptos SDK**     | JavaScript library to connect to the Aptos blockchain         |
+| **Aptos Wallet**  | Wallet to handle Aptos transactions                           |
 
 ---
 
@@ -45,17 +44,25 @@ The project employs the following technologies:
 
 ## 🖥️ **Directory Structure**
 
-Here’s the current structure of the project:
+Here's the current structure of the project:
 
-```bash
-Spheron/
+
+Spheron 
+
 │
-├── contracts/        # Smart contracts for Ethereum (Solidity) and Aptos (Move)
-├── index.html        # Main HTML file for the frontend interface
-├── style.css         # CSS file for the page’s styling
-├── script.js         # JavaScript file containing logic and blockchain interactions
-└── README.md         # Project documentation (this file)
-```
+├── .aptos/config.yaml        
+├── contracts/              
+│   ├── EventTicketing.sol    
+│   └── EventTicketing.move    
+├── docs/                    
+│   ├── index.html    
+│   ├── style.css          
+│   └── script.js           
+├── EventX/       
+│   ├── sources/main.move      
+│   └── move.toml            
+└── README.md               
+
 
 ---
 
@@ -69,9 +76,9 @@ Spheron/
 ### How to Run
 
 1. **Clone the Repository**:
-   ```bash
+   
    git clone https://github.com/Prudhvi-232/Spheron.git
-   ```
+   
 
 2. **Open the Project**:
    - Navigate to the folder and open `index.html` in any modern browser.
@@ -120,5 +127,13 @@ We welcome contributions! If you have suggestions or improvements, please follow
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
 
 ---
+
+## 🌍 **Live Demo**
+
+You can check out the live demo of the project at [Spheron Live Demo](https://prudhvi-232.github.io/Spheron/).
+
+## 🔗 **Blockchain Transactions**
+
+You can view blockchain transactions [here](https://explorer.aptoslabs.com/txn/0x153376efdc84faf5dc3ad99bd482fb9b30c71dc580925ca4cf974577674e1118/changes?network=testnet).
 
 Join us in revolutionizing event ticketing with blockchain technology! 🎟️💡
