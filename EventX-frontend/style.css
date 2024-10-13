@@ -1,32 +1,101 @@
-body {
-	font-family: Arial, sans-serif;
-	margin: 20px;
+/* Ensure consistent box-sizing for all elements */
+* {
+	box-sizing: border-box;
 }
 
-h1,
+body {
+	font-family: 'Roboto', sans-serif;
+	background: linear-gradient(to right, #6a11cb, #2575fc);
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 20px;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+h1 {
+	font-size: 2.5rem;
+	color: #fff;
+}
+
 h2 {
-	color: #333;
+	color: #f0f0f0;
+	font-size: 1.8rem;
+	margin-bottom: 15px;
+}
+
+.card {
+	background-color: #ffffff1a;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
 }
 
 input {
-	margin: 5px;
-	padding: 10px;
-	width: 200px;
+	margin: 10px 0;
+	padding: 15px;
+	width: 100%; /* Ensures inputs take up full width */
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+	background-color: #f0f0f0;
+	color: #333;
 }
 
+/* Ensuring uniform height and spacing of buttons */
 button {
-	padding: 10px;
-	background-color: #007bff;
-	color: white;
+	padding: 12px 20px;
+	width: 100%; /* Ensures button is full width */
+	border-radius: 8px;
 	border: none;
+	background-color: #ff7e5f;
+	color: #fff;
+	font-size: 1.1rem;
 	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
 button:hover {
-	background-color: #0056b3;
+	background-color: #ff6a45;
 }
 
 .message {
-	margin-top: 10px;
-	font-size: 14px;
+	margin-top: 15px;
+	font-size: 1rem;
+	color: #ffdfba;
+}
+
+footer {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 0.9rem;
+	color: #ccc;
+}
+
+input::placeholder {
+	color: #999;
+	opacity: 0.8;
+}
+
+/* Add media queries for responsiveness on smaller screens */
+@media (max-width: 600px) {
+	input,
+	button {
+		width: 100%;
+		font-size: 1rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
 }

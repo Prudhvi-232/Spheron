@@ -3,35 +3,43 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Event Ticketing System</title>
+		<title>EventX : The De-Centralized Ticketing System</title>
 		<link rel="stylesheet" href="style.css" />
 		<script src="https://unpkg.com/aptos@latest/dist/index.umd.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.umd.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"></script>
 	</head>
 	<body>
-		<h1>Event Ticketing System</h1>
+		<div class="container">
+			<header>
+				<h1>🎟 Event Ticketing System</h1>
+			</header>
 
-		<div>
-			<h2>Create Event</h2>
-			<input type="text" id="eventName" placeholder="Event Name" />
-			<input type="text" id="eventDate" placeholder="Event Date" />
-			<input type="number" id="ticketPrice" placeholder="Ticket Price" />
-			<input
-				type="number"
-				id="totalTickets"
-				placeholder="Total Tickets"
-			/>
-			<button id="createEventBtn">Create Event</button>
-			<p id="createEventMsg" class="message"></p>
+			<div class="card">
+				<h2>Create Event</h2>
+				<input type="text" id="eventName" placeholder="Event Name" />
+				<input type="text" id="eventDate" placeholder="Event Date" />
+				<input type="number" id="ticketPrice" placeholder="Ticket Price" />
+				<input
+					type="number"
+					id="totalTickets"
+					placeholder="Total Tickets"
+				/>
+				<button id="createEventBtn">Create Event</button>
+				<p id="createEventMsg" class="message"></p>
+			</div>
+
+			<div class="card">
+				<h2>Buy Ticket</h2>
+				<input type="number" id="eventId" placeholder="Event ID" />
+				<button id="buyTicketBtn">Buy Ticket</button>
+				<p id="buyTicketMsg" class="message"></p>
+			</div>
 		</div>
 
-		<div>
-			<h2>Buy Ticket</h2>
-			<input type="number" id="eventId" placeholder="Event ID" />
-			<button id="buyTicketBtn">Buy Ticket</button>
-			<p id="buyTicketMsg" class="message"></p>
-		</div>
+		<footer>
+			<p>The Spheron Hackathon 2024 : EventX</p>
+		</footer>
 
 		<script src="script.js"></script>
 	</body>
