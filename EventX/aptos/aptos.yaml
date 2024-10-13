@@ -1,7 +1,0 @@
-name: EventX
-version: 0.1.0
-modules:
-  - EventX
-  - Event
-  - Ticket
-  - Wallet
