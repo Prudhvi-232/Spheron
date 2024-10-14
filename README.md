@@ -5,7 +5,7 @@
 
 ## Overview
 
-**Spheron** is a decentralized event ticketing system that allows users to create and manage events while enabling decentralized ticket purchases. By integrating with Ethereum and Aptos blockchains, the system ensures that ticket sales are transparent, secure, and verifiable.
+**EventX** is a decentralized event ticketing system that allows users to create and manage events while enabling decentralized ticket purchases. By integrating with Ethereum and Aptos blockchains, the system ensures that ticket sales are transparent, secure, and verifiable.
 
 This project is ideal for event organizers looking to bypass traditional centralized ticketing systems and adopt a blockchain-powered approach.
 
